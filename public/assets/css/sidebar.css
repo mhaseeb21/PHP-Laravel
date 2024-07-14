@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #000000; /* Black background */
+    color: white;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    transition: transform 0.3s ease; /* Smooth transition for showing/hiding */
+}
+
+.sidebar.active {
+    transform: translateX(-250px); /* Hide sidebar */
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+}
+
+.sidebar a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 250px);
+    overflow: auto;
+    flex-grow: 1; /* Allow content to grow in height */
+    transition: margin-left 0.3s ease; /* Smooth transition for content shift */
+}
+
+.header {
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    border-bottom: 1px solid #dee2e6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#menu-toggle {
+    display: none;
+    color: white; /* Change hamburger menu color to white */
+    background: none; /* Remove button background */
+    border: none; /* Remove button border */
+    font-size: 1.5em; /* Increase font size */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .sidebar {
+        transform: translateX(-250px); /* Hide sidebar by default */
+    }
+
+    .sidebar.active {
+        transform: translateX(0); /* Show sidebar */
+    }
+
+    .content {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    #menu-toggle {
+        display: block; /* Show menu button */
+    }
+}
+
+/* Ensure sidebar is visible on desktop */
+@media (min-width: 769px) {
+    .sidebar {
+        transform: translateX(0); /* Show sidebar by default */
+    }
+
+    .content {
+        margin-left: 250px; /* Adjust content margin */
+        width: calc(100% - 250px);
+    }
+}

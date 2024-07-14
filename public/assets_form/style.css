@@ -1,0 +1,85 @@
+/* Registration Form */
+.registration-form {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin: 40px auto;
+}
+
+/* Input Group */
+.input-group .form-control {
+    padding-right: 2.5rem;
+}
+
+.input-group .form-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #6c757d;
+}
+
+/* Hover effect */
+.input-group:hover {
+    background: #ffbb38;
+}
+
+/* Button style */
+.btn-primary {
+    background-color: black;
+    border-color: black;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #ffbb38;
+    border-color: #ffbb38;
+    color: black;
+}
+/* Selection color */
+::selection {
+    background-color: #ffbb38;
+    color: black; /* Text color when selected */
+}
+
+/* Input selection color */
+input::selection {
+    background-color: #ffbb38;
+    color: black; /* Text color when selected */
+}
+
+.login-form {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 400px;
+    margin: 40px auto;
+}
+.input-group .form-control {
+    padding-right: 2.5rem;
+}
+.input-group .form-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #6c757d;
+}
+/* Hover effect */
+.input-group:hover {
+    background: #ffbb38;
+}
+/* Button style */
+.btn-primary {
+    background-color: black;
+    border-color: black;
+    color: white;
+}
+.btn-primary:hover {
+    background-color: #ffbb38;
+    border-color: #ffbb38;
+    color: black;
+}
